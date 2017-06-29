@@ -2364,7 +2364,7 @@ function createFunctionalComponentInput(vNode, component, props, context) {
 exports.createFunctionalComponentInput = createFunctionalComponentInput;
 function setTextContent(dom, text) {
     if (text !== '') {
-        dom.textContent = text;
+        dom.innerHtml = text;
     }
     else {
         dom.appendChild(document.createTextNode(''));
