@@ -10,8 +10,8 @@
     Modification:
     Date              Updated By          Line        Descripton  
     ================= =================== =========== ====================================  
-    Jun 29, 2017      Ryan Burt           2378-2381   Modify line to accept HTML 
-    
+    Jun 29, 2017      Ryan Burt           2378-2381   Modify line to accept HTML instead
+                                                      of plain text
     
     
     
