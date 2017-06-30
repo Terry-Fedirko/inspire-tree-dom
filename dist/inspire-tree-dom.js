@@ -5,6 +5,17 @@
  * @license Licensed under MIT
  *          see https://github.com/helion3/inspire-tree-dom/blob/master/LICENSE
  */
+
+/* ---------------------------------------------------------------------------------------
+    Modification:
+    Date              Updated By          Line        Descripton  
+    ================= =================== =========== ====================================  
+    Jun 29, 2017      Ryan Burt           2378-2381   Modify line to accept HTML 
+    
+    
+    
+    
+   --------------------------------------------------------------------------------------- */
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('lodash'), require('inspire-tree')) :
 	typeof define === 'function' && define.amd ? define(['lodash', 'inspire-tree'], factory) :
@@ -2364,7 +2375,10 @@ function createFunctionalComponentInput(vNode, component, props, context) {
 exports.createFunctionalComponentInput = createFunctionalComponentInput;
 function setTextContent(dom, text) {
     if (text !== '') {
-        dom.innerHTML = text;
+        // Modifyied by RB: Jun 29, 2017
+        // This will provide the ability to use HTML tags instead
+        // of plain text value.
+        dom.innerHTML = text;   
     }
     else {
         dom.appendChild(document.createTextNode(''));
